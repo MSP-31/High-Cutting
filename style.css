@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap");
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    scroll-behavior: smooth;
+}
+.hero-bg {
+    /* 배경 이미지 경로 수정 예시: assets/images 폴더에 main-bg.jpg 파일을 넣어주세요 */
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("assets/images/main-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.gallery-tab.active {
+    background-color: #fbbf24;
+    color: #000;
+    border-color: #fbbf24;
+}
+
+/* Modal Style for Image Popup */
+#imageModal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    transition: 0.3s;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+#modalImg {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 85%;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+/* Loading Spinner */
+.loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #fbbf24;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    display: none;
+    position: absolute;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
