@@ -68,3 +68,9 @@ body {
         transform: rotate(360deg);
     }
 }
+
+/* Brand Identity Card Animation */
+.brand-card:hover {
+    transform: translateY(-10px);
+    background-color: #fef3c7;
+}
