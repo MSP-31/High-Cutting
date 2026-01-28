@@ -3,17 +3,25 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>하이(high)컷팅건설 | 줄눈·건식컷팅·코킹 전문</title>
+        <title>하이컷팅건설 | 줄눈·건식컷팅·코킹 전문</title>
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-        <!-- 파비콘(브라우저 탭 아이콘) 설정: assets/icons 폴더에 favicon.png 파일을 넣어주세요 -->
         <link rel="icon" type="image/png" href="assets/icons/favicon.png" />
         <link rel="stylesheet" href="style.css" />
     </head>
     <body class="bg-gray-50 text-gray-800">
         <!-- Hero Section -->
-        <header class="hero-bg text-white py-28 px-6 text-center">
-            <div class="max-w-4xl mx-auto">
+        <header class="relative bg-gray-900 text-white py-28 px-6 text-center overflow-hidden">
+            <!-- Image Background (Mobile) -->
+            <div class="absolute top-0 left-0 w-full h-full bg-cover bg-center md:hidden" style="background-image: url(&quot;assets/images/hero_bg_fallback.webp&quot;)"></div>
+            <!-- Video Background (Desktop) -->
+            <video autoplay loop muted playsinline class="hidden md:block absolute top-0 left-0 w-full h-full object-cover">
+                <source src="assets/videos/hero_bg.mp4" type="video/mp4" />
+            </video>
+            <!-- Dark Overlay -->
+            <div class="absolute top-0 left-0 w-full h-full bg-black/60"></div>
+
+            <div class="relative z-10 max-w-4xl mx-auto">
                 <span class="bg-yellow-500 text-black px-4 py-1 rounded-full font-bold text-sm mb-6 inline-block animate-bounce">전국 출장 가능</span>
                 <div class="flex justify-center items-center gap-x-4 md:gap-x-6 mb-6">
                     <img src="assets/icons/logo.webp" alt="하이컷팅건설 로고" class="h-16 md:h-20 drop-shadow-lg" />
@@ -35,7 +43,7 @@
         <section class="py-16 bg-white border-b border-gray-100">
             <div class="max-w-6xl mx-auto px-6">
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl font-black text-gray-900 mb-2">하이(High)컷팅건설의 세 가지 약속</h2>
+                    <h2 class="text-3xl font-black text-gray-900 mb-2">하이컷팅건설이 지키는 세 가지 원칙</h2>
                     <div class="h-1 w-16 bg-blue-600 mx-auto"></div>
                 </div>
                 <div class="grid md:grid-cols-3 gap-6">
@@ -102,8 +110,8 @@
         <section class="py-20 bg-gray-900 text-white">
             <div class="max-w-6xl mx-auto px-6">
                 <div class="text-center mb-16">
-                    <h2 class="text-4xl font-black mb-4">왜 하이컷팅인가?</h2>
-                    <p class="text-gray-400">현장이 인정하는 하이컷팅만의 세 가지 약속</p>
+                    <h2 class="text-4xl font-black mb-4">왜 하이컷팅건설인가?</h2>
+                    <p class="text-gray-400">현장이 인정하는 하이컷팅건설만의 세 가지 약속</p>
                 </div>
 
                 <div class="grid md:grid-cols-3 gap-12">
@@ -379,7 +387,7 @@
                 <div class="text-gray-500 space-y-2 text-sm font-light">
                     <p>사업자등록번호: 594-21-02283 | 대표: 김영섭</p>
                     <p>주소: 부산광역시 부산진구 백양관문로 115</p>
-                    <p class="mt-4 font-light text-xs opacity-60">Copyright &copy; 2024 High Cutting Construction. All rights reserved.</p>
+                    <p class="mt-4 font-light text-xs opacity-60">Copyright &copy; 2026 High Cutting Construction. All rights reserved.</p>
                 </div>
             </div>
         </footer>
