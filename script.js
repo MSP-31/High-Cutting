@@ -39,3 +39,23 @@ function closeModal() {
     modal.style.display = "none";
     document.body.style.overflow = "auto";
 }
+
+/**
+ * 텍스트를 클립보드에 복사하고 사용자에게 피드백을 제공하는 함수
+ */
+function copyToClipboard(text, element) {
+    navigator.clipboard.writeText(text).then(
+        function () {
+            const originalHTML = element.innerHTML;
+            element.innerHTML = '<i class="fas fa-check"></i> 복사 완료!';
+            element.disabled = true;
+            setTimeout(function () {
+                element.innerHTML = originalHTML;
+                element.disabled = false;
+            }, 2000);
+        },
+        function (err) {
+            alert("복사 실패: " + err);
+        },
+    );
+}
