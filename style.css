@@ -71,6 +71,6 @@ body {
 
 /* Brand Identity Card Animation */
 .brand-card:hover {
-    transform: translateY(-10px);
-    background-color: #fef3c7;
+    transform: translateY(-6px);
+    background-color: #fefce8;
 }
